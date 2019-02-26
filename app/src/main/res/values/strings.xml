@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Registration Form</string>
+    <string name="passwordIsEmpty">Password field can\'t be empty</string>
+    <string name="passwordIsLong">Password is long</string>
+    <string name="passwordIsShort">Password is short</string>
+    <string name="mailIsEmpty">Mail field can\'t be empty</string>
+    <string name="domainIsNotCorrectly">Domain is not correctly! Chek you domain part! ( Example: @mail.ru)</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="registration">Registration</string>
+</resources>

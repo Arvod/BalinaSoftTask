@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg"
+    android:id="@+id/scrollable">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootView"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.balinasoft.test_task.RegistrationActivity">
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="198dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/logo" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:passwordToggleTint = "@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent">
+
+            <AutoCompleteTextView
+                android:layout_alignParentBottom="true"
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="HelveticaNeueCyr-Roman"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:singleLine="false">
+            </AutoCompleteTextView>
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleTint = "@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent"
+            app:counterMaxLength="8"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="false"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/registration_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:text="@string/registration"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:type="radial"
+            android:textColor="@color/colorAccent"
+            android:startColor="@color/startColor"
+            android:endColor="@color/endColor"
+            android:gradientRadius="300"
+            android:angle="225"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
