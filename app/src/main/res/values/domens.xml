@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="domens">
+        <item> hotmail.com </item>
+        <item> gmail.co.uk </item>
+        <item> live.com </item>
+        <item> msn.com </item>
+        <item>  yahoo.com </item>
+        <item>  ymail.com </item>
+        <item>  rocketmail.com </item>
+        <item>  yahoomail.com </item>
+        <item>  yahoo-inc.com </item>
+        <item>  gmail.com </item>
+        <item>  googlemail.com </item>
+        <item>  aol.com </item>
+        <item>  mail.ru </item>
+        <item>  yandex.ru </item>
+        <item>  gmail.ru </item>
+        <item>  rambler.ru </item>
+        <item>  qip.ru </item>
+        <item>  aol.com </item>
+    </string-array>
+</resources>
