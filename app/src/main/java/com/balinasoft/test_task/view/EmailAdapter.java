@@ -1,5 +1,4 @@
-package com.balinasoft.test_task;
-
+package com.balinasoft.test_task.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -35,7 +34,7 @@ public class EmailAdapter extends ArrayAdapter<String> {
         LayoutInflater vi = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         v = vi.inflate(viewResourceId, null);
         String customer = items.get(position);
-        TextView customerNameLabel = (TextView)v;
+        TextView customerNameLabel = (TextView) v;
         customerNameLabel.setText(customer);
         return v;
     }
@@ -51,18 +50,18 @@ public class EmailAdapter extends ArrayAdapter<String> {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
             String lineBreaking = constraint.toString();
-            if(lineBreaking.contains("@")) {
-                String lineBreakingAndSearch = lineBreaking.substring(lineBreaking.indexOf("@"));
+            if (lineBreaking.contains("@")) {
+                String lineBreakingAndSearch = lineBreaking.substring(lineBreaking.indexOf("@") + 1);
                 String symbolOfBreaking;
-                try{
-                    symbolOfBreaking = lineBreaking.substring(0, lineBreaking.indexOf("@"));
-                }catch (Exception ex) {
-                    symbolOfBreaking ="";
+                try {
+                    symbolOfBreaking = lineBreaking.substring(0, lineBreaking.indexOf("@") + 1);
+                } catch (Exception ex) {
+                    symbolOfBreaking = "";
                 }
                 suggestions.clear();
                 for (String customer : itemsAll) {
-                    if(customer.toLowerCase().startsWith(lineBreakingAndSearch.toString().toLowerCase())){
-                        suggestions.add(symbolOfBreaking+customer);
+                    if (customer.toLowerCase().startsWith(lineBreakingAndSearch.toLowerCase())) {
+                        suggestions.add(symbolOfBreaking + customer);
                     }
                 }
                 FilterResults filterResults = new FilterResults();
@@ -77,7 +76,7 @@ public class EmailAdapter extends ArrayAdapter<String> {
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             ArrayList<String> filteredList = (ArrayList<String>) results.values;
-            if(results.count > 0) {
+            if (results.count > 0) {
                 clear();
                 for (String c : filteredList) {
                     add(c);

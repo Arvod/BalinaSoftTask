@@ -5,4 +5,9 @@
     <color name="colorAccent">#ffffff</color>
     <color name="startColor">#0ac4ba</color>
     <color name="endColor">#2bda8e</color>
+    <color name="colorErrorText">#b71c1c</color>
+    <color name="colorMainBackgroundTop">#fffffde7</color>
+    <color name="colorMainBackgroundBottom">#fffff9c4</color>
+    <color name="colorFadeBackground">@color/colorAccent</color>
+    <color name="colorFadeStatusBar">#bbb9a9</color>
 </resources>

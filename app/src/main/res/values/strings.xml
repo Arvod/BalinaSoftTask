@@ -1,11 +1,20 @@
 <resources>
     <string name="app_name">Registration Form</string>
-    <string name="passwordIsEmpty">Password field can\'t be empty</string>
-    <string name="passwordIsLong">Password is long</string>
-    <string name="passwordIsShort">Password is short</string>
     <string name="mailIsEmpty">Mail field can\'t be empty</string>
-    <string name="domainIsNotCorrectly">Domain is not correctly! Chek you domain part! ( Example: @mail.ru)</string>
+    <string name="domainIsNotCorrectly">Domain is not correctly! Check you domain part! ( Example: @mail.ru)</string>
+    <string name="incorrectEmail">Incorrect Email</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="registration">Registration</string>
+
+    <string name="greeting_subtitle_message">Please enter your data to log in</string>
+    <string name="prompt_login">Login</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+
+    <string name="empty_password_error_message_label">Please fill the password field</string>
+    <string name="short_password_error_message_label">Password must be greater 8 symbols</string>
+    <string name="long_password_error_message_label">Password must be less than 15 symbols</string>
+    <string name="error_response">{"status":400,"error":"security.signup.login-already-use"}</string>
+
 </resources>

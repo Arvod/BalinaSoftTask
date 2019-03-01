@@ -2,7 +2,7 @@ package com.balinasoft.test_task.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class RegistrationBody{
+public class RegistrationBody {
     @SerializedName("login")
     private String login;
     @SerializedName("password")

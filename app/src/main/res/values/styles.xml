@@ -6,6 +6,39 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">#7eb6df</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
     </style>
 
+
+    <!--Input field container style-->
+    <style name="DefaultAppTextInputLayout" parent="TextAppearance.AppCompat.Small">
+        <item name="android:layout_width">@dimen/zero_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/widget_margin</item>
+        <item name="android:layout_marginRight">@dimen/widget_margin</item>
+        <item name="android:layout_marginTop">@dimen/widget_margin</item>
+        <item name="android:layout_marginBottom">@dimen/widget_margin</item>
+    </style>
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textColor">@color/colorErrorText</item>
+    </style>
+
+    <!--Input field style-->
+    <style name="DefaultTextInputEditText" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:drawablePadding">@dimen/input_text_drawable_padding</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--Fading foreground-->
+    <style name="FadingForeground" parent="AppTheme">
+        <item name="android:layout_width">@dimen/zero_value</item>
+        <item name="android:layout_height">@dimen/zero_value</item>
+        <item name="android:background">@color/colorFadeBackground</item>
+        <item name="android:visibility">gone</item>
+    </style>
 </resources>

@@ -1,4 +1,4 @@
-package com.balinasoft.test_task;
+package com.balinasoft.test_task.api;
 
 
 import com.balinasoft.test_task.model.RegistrationBody;
@@ -10,5 +10,5 @@ import retrofit.http.POST;
 
 public interface Api {
     @POST("/api/account/signup")
-    public Call<RegistrationResponse> registerUser(@Body RegistrationBody registrationBody);
+    Call<RegistrationResponse> registerUser(@Body RegistrationBody registrationBody);
 }
